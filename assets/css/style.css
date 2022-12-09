@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    background:linear-gradient(#222831,#27496D)
+}
+p{
+    color: #EEEEEE;
+}
+/* Login Page  */
+a{
+    text-decoration: none;
+    color: #00ADB5;
+}
+.left_sign_up{
+    width: 40%;
+    margin-top: 20%;
+    margin-left: 5%;
+}
+.sign_up_back{
+    min-height: 100vh;
+}
+.left_sign_up > img {
+    width: 100%;
+    background-color: #009925;
+    border-radius: 20%;
+    border: 5px solid lightgreen;
+}
+.right_sign_up{
+    width: 60%;
+    margin: 10%;
+    margin-top: 20%;
+
+}
+input{
+    width: 96%;
+    margin: 2%;
+    padding: 30px;
+    border: 3px solid #009925;
+    font-size: 20px;
+    background-color: #393E46;
+    color: #009925;
+}
+.flex{
+    display: flex;
+}
+.acc{
+    justify-content: space-between;
+}
+
+/* Body Header */
+
+header{
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    color: #3EC70B;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#222831;
+    height: 110px;
+}
+#header_icon{
+    font-size: 50px;
+}
+header div{
+    margin-left: 2%;
+    color: #6B728E;
+    font-family: 'Inter', sans-serif;
+    margin-right: 2%;
+}
+header div a{
+    margin-right: 15px;
+    text-decoration: none;
+    color: #EEEEEE;
+    padding: 10px;
+    border-radius: 5px;
+}
+header a:hover{
+    color: #00ADB5;
+}
+#logo{
+    width: 140%;
+}
+.logo_text {
+    margin-top: 10%;
+    margin-left: 10%;
+    font-size: 25px;
+}
+/* header end */
+
+#submit{
+    cursor: pointer;
+    
+}
+#submit:hover{
+    color: white;
+    font-weight: 400;
+}
+
+/* first section in the body */
+
+.left_flex{
+    width: 50%;
+    margin-top: 25%;
+    font-size: 25px;
+    margin-right: 1%;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+}
+.left_flex > h1{
+    text-transform: uppercase;
+    color: #3EC70B;
+    margin-bottom: 20px;
+    text-shadow:10px 10px 100px black;
+}
+.right_img{
+    width: 50%;
+    margin-top: 25%;
+    box-shadow: 10px 10px 50px black;
+    border-radius: 20px;
+}
+.right_img > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.first_section_content, .second_section_content, .third_section_content,.fourth_section_content,.fifth_section_content{
+    margin-right:10% ;
+    margin-left: 10%;
+}
+video{
+    position: absolute;
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    opacity: 30%;
+}
+.first_section{
+    /* background: linear-gradient(#000000,#150050); */
+    width: 100%;
+    height: 100vh;
+    box-shadow: 20px 20px 100px #150050;
+}
+
+/* Anonymous sections */
+
+.second_section_title{
+    padding-top: 5%;
+    text-align: center;
+    font-size: 50px;
+    color: #3EC70B;
+}
+
+.second_section_content{
+    padding-top:5% ;
+}
+.second_section{
+    width: 100%;
+    height: 100vh;
+}
+.left_img{
+    width: 50%;
+    margin-right: 5%;    
+}
+.left_img > img{
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 50px black;
+    
+}
+.right_text, .right_img, .left_text{ /* Lapsus$ Section right side image and text width added */
+    width: 50%;
+}
+.right_text,.left_img > h1{
+    color: #A4BE7B;
+}
+.right_text> p{
+    margin-top: 20px;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+}
+/* Lapsus$ Section */
+
+.right_text > img {
+    width: 100%;
+    margin-top: 7%;
+    height: 80%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 50px black;
+}
+.left_img>p{
+    margin-top: 20px;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+}
+.third_section_content,.fourth_section_content,.fifth_section_content{
+    height: 90vh;
+    padding-top: 10%;
+}
+
+#learn{
+    margin-left: 40%;
+    border: 3px solid #00ADB5;
+    color: white;
+    padding: 1%;
+    border-radius: 20px;
+    background-color: #222831;
+
+}
+
+/* Learn .Html */
+
+
+#goback{
+    font-size: 100px;
+    padding-top: 10%;
+    position: fixed;
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 5%;
+}
+/* #comingsoon{
+    position: absolute;
+    top: 111%;
+    background-color: hotpink;
+    left: 20%;
+    border-radius: 10px;
+    color: black;
+} */
+.container_card{
+    
+    background-color: #00ADB5;
+    border-radius: 10px;
+    width:19%;
+    margin-top: 10%;
+    margin-left: 10%;
+    
+}
+
+.container_card:hover{
+    box-shadow: 10px 10px 500px #009925;
+}
+.container_card div img{
+    margin: 10%;
+    width: 80%;
+    border-radius: 10px;
+}
+.container_card div p{
+    text-align: center;
+    font-size: 30px;
+    padding: 10%;
+    color: #393E46;
+}
+/* hackers.html */
+
+.hackertypes{
+    padding:10%;
+    color:yellow;
+    
+
+}
+.whitehat,.grayhat, .blackhat{
+    margin-top: 5%;
+    color: white;
+}
+.whitehat p,.grayhat p, .blackhat p{
+    margin-top: 2%;
+    line-height: 30px;
+    letter-spacing: 1px;
+    font-size: 25px;
+    color: #00ADB5;
+    text-transform: capitalize;
+}
+.whitehat{
+    display: flex;
+}
+#hacker_gif{
+    margin-top: 10%;
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+}
+#tyofhak{ /* Types of hackers font size */
+    font-size: 50px;
+}
+
+/* stages of hacking */
+
+.hackingstages{
+    padding: 10%;
+    font-size: 30px;
+}
+.hackingstages > h1{
+    font-size: 50px;
+    color: yellow;
+}
+.hackingstages h2{
+    color: #00ADB5;
+}
+.reconnaissance,.scanning,.gainingaccess,.maintainingaccess,.clearingtracks{
+    padding-top: 3%;
+    width: 50%;
+}
+.hackingstages ul{
+    color:lightgreen;
+}
+.reconnaissance ul {
+    margin-top: 10%;
+    
+}
+.reconnaissance > p{
+    padding-top: 3%;
+}
+.scanning,.gainingaccess,.maintainingaccess,.clearingtracks{
+    margin-top: 5%;
+}
+
+/* About Page */
+
+.aboutus{
+    padding: 10%;
+}
+
+/* Clickjacking page */
+.container{
+    height: 100%;
+}
+.clickjack{
+    padding: 10%;
+    display: flex;
+    color: white;
+}
+.click_txt > p{
+    width: 60%;
+    padding: 1%;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-size:  30px;
+    background-color: #00ADB5;
+    color:#222831;
+}
+.click_txt > h1{
+    font-size: 50px;
+    color: #00ADB5;
+}
+.click_txt > h2{
+    margin-top:5% ;
+    color: yellow;
+    font-size: 30px;
+}
+#ytvideo,#fakelink, #invisible_link{
+    border: none;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+
+}
+#fakelink{
+    z-index: 100;
+}
+#ytvideo{
+    z-index: -1;
+    border: 3px solid white;
+}
+#invisible_link{
+    display: block;
+}
+#video{
+    display: flex;
+    justify-content: end;
+    margin-top: 15%;
+}
+.code_img{
+    margin-top: 5%;
+    border: 5px solid green;
+    border-radius: 20px;
+    background-color: #1e1e1e;
+}
+.code_img > img:nth-child(1){
+    width: 500px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 80px;
+    height: 200px;
+}
+#click_gmail{
+    border-radius: 20px;
+    margin-top:20px;
+}
+#gmail_right_text{
+    margin:3%;
+    font-size: 25px;
+}
+.prevention{
+    font-size: 25px;
+    margin-top: 3rem;
+}
+.prevention p {
+    margin-top: 2%;
+    color: red;
+    text-shadow:2px 2px 20px black;
+}
+/* footer */
+
+.footer_content{
+    padding: 10%;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer_content li{
+    margin-top: 20px;
+}
+#follow div li{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    padding-left: 10px;
+    font-size: 50px;
+    list-style: none;
+
+}
+footer div ul{
+    list-style:none;
+}
+footer{
+    list-style: none;
+    color: #00ADB5;
+    height: 50vh;
+    background: linear-gradient(#1F1D36,#3F3351);
+}

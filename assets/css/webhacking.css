@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+body{
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    background:linear-gradient(#222831,#27496D)
+}
+.flex{
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+/* go back */
+#goback{
+    font-size: 100px;
+    padding-top: 2%;
+    position: fixed;
+    color: white;
+}
+
+header{
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+    color: #3EC70B;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#222831;
+    height: 110px;
+}
+#header_icon{
+    font-size: 50px;
+}
+header div{
+    margin-left: 2%;
+    color: #6B728E;
+    font-family: 'Inter', sans-serif;
+    margin-right: 2%;
+}
+header div a{
+    margin-right: 15px;
+    text-decoration: none;
+    color: #EEEEEE;
+    padding: 10px;
+    border-radius: 5px;
+}
+header a:hover{
+    color: #00ADB5;
+}
+#logo{
+    width: 140%;
+}
+.logo_text {
+    margin-top: 10%;
+    margin-left: 10%;
+    font-size: 25px;
+}
+
+/* webhacking section */
+
+.webhacking{
+    background-color: #00ADB5;
+    border-radius: 10px;
+    width:19%;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+.clickjacking{
+    margin: 10px;
+}
+.container_card:hover{
+    box-shadow: 10px 10px 500px #009925;
+}
+.container_card div img{
+    margin: 10%;
+    width: 80%;
+    border-radius: 10px;
+    justify-content: center;
+}
+.container_card{
+    border-radius: 10px;
+}
+.click_img{
+    width: 100%;
+}
+.container_card div p{
+    text-align: center;
+    font-size: 30px;
+    color: #393E46;
+    
+}
