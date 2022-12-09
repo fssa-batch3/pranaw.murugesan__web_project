@@ -72,6 +72,8 @@ header a:hover{
 }
 .container_card:hover{
     box-shadow: 10px 10px 500px #009925;
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 .container_card div img{
     margin: 10%;
