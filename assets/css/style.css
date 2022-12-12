@@ -255,7 +255,9 @@ video{
     margin-left: 10%;
     
 }
-
+#coming_soon{
+    opacity: 50%;
+}
 .container_card:hover{
     box-shadow: 10px 10px 500px #009925;
     transform: scale(1.1);
