@@ -37,7 +37,7 @@ a{
     margin-top: 20%;
 
 }
-input{
+input, button{
     width: 96%;
     margin: 2%;
     padding: 30px;
@@ -45,6 +45,9 @@ input{
     font-size: 20px;
     background-color: #393E46;
     color: #009925;
+}
+button{
+    cursor: pointer;
 }
 .flex{
     display: flex;
