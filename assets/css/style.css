@@ -147,6 +147,14 @@ video{
     z-index: -1;
     opacity: 30%;
 }
+#learn_bg_video{
+    position: fixed;
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    opacity: 30%;
+}
 .first_section{
     /* background: linear-gradient(#000000,#150050); */
     width: 100%;

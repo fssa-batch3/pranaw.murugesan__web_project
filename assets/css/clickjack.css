@@ -12,7 +12,7 @@ body{
 }
 header{
     display: flex;
-    position: sticky;
+    position: fixed;
     z-index: 1000;
     width: 100%;
     color: #3EC70B;
@@ -56,12 +56,13 @@ a{
 }
 #goback{
     font-size: 100px;
-    padding-top: 5%;
     position: fixed;
+    padding-top: 10%;
     color: white;
 }
 main{
-    padding: 5%;
+
+    padding-top: 10%;
     padding-left:20% ;
     padding-right:20% ;
 }
@@ -76,8 +77,9 @@ main{
     border-radius: 10px;
     margin-left: -18%;
     margin-top: 2%;
+    cursor: pointer;
 }
-#fakelink{
+#fakelink,#invisible_link{
     z-index: 100;
 }
 #invisible_link{
@@ -88,14 +90,13 @@ main{
     margin-top: 47%;
 }
 .video_demo{
-    text-align: center;
 }
 .second_para{
     margin-top: 10%;
 }
 .code_img{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
 }
 /* Background Video */
 video{

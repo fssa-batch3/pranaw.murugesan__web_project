@@ -2,7 +2,9 @@
 body{
     height: 100vh;
     font-family: 'Inter', sans-serif;
-    background:linear-gradient(#222831,#27496D)
+    background:linear-gradient(#222831,#27496D);
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 .flex{
     display: flex;
@@ -17,7 +19,6 @@ a{
     position: fixed;
     color: white;
 }
-
 header{
     display: flex;
     position: fixed;
