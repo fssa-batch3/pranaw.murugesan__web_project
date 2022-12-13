@@ -293,6 +293,18 @@ video{
     
 
 }
+.grayhat h2{
+    margin-bottom: 10%;
+    padding: 10px;
+}
+
+.grayhat h2:hover{
+    background-color: green;
+    box-shadow: 10px 10px 50px green;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+}
 .whitehat,.grayhat, .blackhat{
     margin-top: 5%;
     color: white;
