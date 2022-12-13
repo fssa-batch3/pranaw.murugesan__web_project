@@ -331,10 +331,29 @@ video{
 }
 
 /* stages of hacking */
-
+@keyframes animate {
+    0%{
+        opacity: 0%;
+    }100%{
+        opacity: 100%;
+    }
+}
 .hackingstages{
     padding: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
     font-size: 30px;
+    animation: animate 2.5s ;
+}
+.bg_color{
+    background-color: #e1e1;
+    padding: 5%;
+}
+.bg_color:hover{
+    box-shadow: 10px 10px 50px #1e1e1e;
+}
+.scanning{
+    float: right;
 }
 .hackingstages > h1{
     font-size: 50px;
