@@ -345,15 +345,17 @@ video{
     font-size: 30px;
     animation: animate 2.5s ;
 }
+#satelite_img{
+    width: 30rem;
+    height: 30rem;
+
+}
 .bg_color{
     background-color: #e1e1;
     padding: 5%;
 }
 .bg_color:hover{
     box-shadow: 10px 10px 50px #1e1e1e;
-}
-.scanning{
-    float: right;
 }
 .hackingstages > h1{
     font-size: 50px;
@@ -362,9 +364,47 @@ video{
 .hackingstages h2{
     color: #00ADB5;
 }
+#hackingstage_bg_video{
+    position: fixed;
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    opacity: 20%;
+}
+.reconnaissance{
+    display: flex;
+    margin-bottom: 2%;
+    width: 50%;
+    padding-right: 100px;
+}
+.bg_color img{
+    margin-left: 100px;
+}
+.content_img{
+    width: 50%;
+}
+.reconnaissance img{
+    float: right;
+    margin-left: 200px;
+}
+.scanning{
+    display: flex;
+}
+.scanning img{
+    margin-top: 10%;
+    margin-right: 50px;
+}
+.scanning_content{
+    background-color: #1e1e1e;
+    padding: 3%;
+    font-size: 25px;
+}
+.scanning_content:hover{
+    box-shadow: 10px 10px 50px #1e1e1e;
+}
 .reconnaissance,.scanning,.gainingaccess,.maintainingaccess,.clearingtracks{
     padding-top: 3%;
-    width: 50%;
 }
 .hackingstages ul{
     color:lightgreen;
@@ -378,6 +418,7 @@ video{
 }
 .scanning,.gainingaccess,.maintainingaccess,.clearingtracks{
     margin-top: 5%;
+    display: flex;
 }
 
 /* About Page */
