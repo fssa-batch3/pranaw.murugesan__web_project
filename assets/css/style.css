@@ -378,6 +378,9 @@ video{
     width: 50%;
     padding-right: 100px;
 }
+.reconnaissance h2{
+    background:transparent;
+}
 .bg_color img{
     margin-left: 100px;
 }
@@ -399,6 +402,7 @@ video{
     background-color: #1e1e1e;
     padding: 3%;
     font-size: 25px;
+    border-radius: 2%;
 }
 .scanning_content:hover{
     box-shadow: 10px 10px 50px #1e1e1e;
@@ -416,11 +420,33 @@ video{
 .reconnaissance > p{
     padding-top: 3%;
 }
+.maintainingaccess .content_img{
+    width: 400px;
+    margin-right: 100px;
+}
+.content_txt:hover{
+    box-shadow: 10px 10px 50px black;
+}
+.maintainingaccess .content_txt,.clearingtracks .content_txt{
+    background-color: #1e1e1e;
+    border-radius: 2%;
+    padding: 3%;
+}
 .scanning,.gainingaccess,.maintainingaccess,.clearingtracks{
     margin-top: 5%;
     display: flex;
 }
-
+.gainingaccess .content_txt{
+    margin-top: 7%;
+    width: 50%;
+    margin-right: 100px;
+    background-color: #1e1e1e;
+    border-radius: 2%;
+}
+.gainingaccess p, h2{
+    padding: 2%;
+    border-radius: 2%;
+}
 /* About Page */
 
 .aboutus{
