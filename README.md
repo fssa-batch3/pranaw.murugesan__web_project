@@ -1,6 +1,6 @@
 # 100day_project
 
-project for freshwork 100day
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=fssa-batch3_pranaw.murugesan__web_project&metric=bugs)](https://sonarcloud.io/summary/new_code?id=fssa-batch3_pranaw.murugesan__web_project)
 
 Problem statement: https://drive.google.com/drive/u/0/folders/1jNeryUWIod0cnO7hez2p6bWCqBkHvEpe
 
