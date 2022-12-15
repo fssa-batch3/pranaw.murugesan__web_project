@@ -10,6 +10,7 @@ body{
     font-size: 20px;
     font-family: 'Inter', sans-serif;
 }
+/* header goes here */
 header{
     display: flex;
     position: fixed;

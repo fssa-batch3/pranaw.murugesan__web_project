@@ -19,6 +19,7 @@ a{
     position: fixed;
     color: white;
 }
+/* header goes here */
 header{
     display: flex;
     position: fixed;

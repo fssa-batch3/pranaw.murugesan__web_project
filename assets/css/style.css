@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +7,8 @@
 }
 body{
     font-size: 18px;
-    font-family: 'Inter', sans-serif;
+    /* font-family: 'Inter', sans-serif; */
+    font-family: 'League Spartan', sans-serif;
     background:linear-gradient(#222831,#27496D)
 }
 p{
@@ -114,7 +116,6 @@ header a:hover{
     margin-top: 25%;
     font-size: 25px;
     margin-right: 1%;
-    font-family: 'Inter', sans-serif;
     letter-spacing: 3px;
     word-spacing: 5px;
 }
@@ -199,6 +200,7 @@ video{
 .right_text> p{
     margin-top: 20px;
     word-spacing: 5px;
+    font-size: 22px;
     letter-spacing: 1px;
     line-height: 1.5rem;
 }
@@ -214,6 +216,7 @@ video{
 .left_img>p{
     margin-top: 20px;
     word-spacing: 5px;
+    font-size: 22px;
     letter-spacing: 1px;
     line-height: 1.5rem;
 }
@@ -543,15 +546,7 @@ video{
 .footer_content li{
     margin-top: 20px;
 }
-#follow div li{
-    display: flex;
-    flex-direction: row;
-    text-decoration: none;
-    padding-left: 10px;
-    font-size: 50px;
-    list-style: none;
 
-}
 footer div ul{
     list-style:none;
 }
@@ -560,4 +555,11 @@ footer{
     color: #00ADB5;
     height: 50vh;
     background: linear-gradient(#1F1D36,#3F3351);
+}
+.footer_content li{
+    display: flex;
+    padding-left: 10px;
+}
+.footer_content li:hover{
+    color: white;
 }

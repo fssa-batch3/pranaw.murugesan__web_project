@@ -10,6 +10,7 @@ body{
     font-size: 20px;
     font-family: 'Inter', sans-serif;
 }
+/* header goes here */
 header{
     display: flex;
     position: fixed;
@@ -51,9 +52,11 @@ a{
     margin-left: 10%;
     font-size: 25px;
 }
+/* this flex will work where ever i use class flex */
 .flex{
     display: flex;
 }
+/* go back arrow */
 #goback{
     font-size: 100px;
     position: fixed;
@@ -77,6 +80,7 @@ main{
     border-radius: 10px;
     margin-left: 10%;
 }
+/* youtube video */
 #ytvideo{
     border: 2px solid white;
     box-shadow: 5px 5px 50px black;
@@ -142,6 +146,7 @@ video{
     color:lightgreen;
     text-decoration: underline;
 }
+/* question sections */
 .question_session{
     margin-top: 3%;
 }
