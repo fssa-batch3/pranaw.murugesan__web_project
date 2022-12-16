@@ -25,6 +25,18 @@ a{
 #coming_soon{
     opacity: 50%;
 }
+/* scrollbar effect */
+
+::-webkit-scrollbar{
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px gray;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #009925;
+  }
+
 /* header goes here */
 header{
     display: flex;
