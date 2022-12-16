@@ -16,9 +16,14 @@ a{
 /* go back */
 #goback{
     font-size: 100px;
-    padding-top: 2%;
+    padding-top: 8%;
     position: fixed;
     color: white;
+}
+/* comingsoon */
+
+#coming_soon{
+    opacity: 50%;
 }
 /* header goes here */
 header{
@@ -27,6 +32,7 @@ header{
     z-index: 1000;
     width: 100%;
     top: 0;
+    left: 0;
     color: #3EC70B;
     justify-content: space-between;
     align-items: center;

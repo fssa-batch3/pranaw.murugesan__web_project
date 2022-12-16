@@ -5,9 +5,9 @@
     box-sizing: border-box;
 }
 body{
-    height: 100%;
+    height: 130%;
     padding-bottom: 5%;
-    background:linear-gradient(#292929, #1b1b1b);
+    background-color: #292929;
     font-family: 'League Spartan', sans-serif;
 }
 .flex{
@@ -22,6 +22,7 @@ header{
     position: fixed;
     z-index: 1000;
     width: 100%;
+    top: 0;
     color: #3EC70B;
     justify-content: space-between;
     align-items: center;
@@ -71,16 +72,14 @@ aside ul li{
     font-size: 25px;
     list-style: none;
     margin-left:10%;
+    color: #808080;
 }
 aside ul li:hover{
     color:#ffa31a;
     cursor: pointer;
 }
 /* main contents */
-p a{
-    color: green;
-    text-decoration: underline;
-}
+
 main{
     padding-left:20%;
     padding-right:30%;
@@ -123,6 +122,9 @@ main li{
     padding: 3%;
     background-color: orange;
     margin-right: 2%;
+}
+.navigation_buttons h4 a{
+    color: black;
 }
 .navigation_buttons h4:hover{
     transform: scale(1.1);
