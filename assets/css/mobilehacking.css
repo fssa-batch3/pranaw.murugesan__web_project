@@ -6,7 +6,7 @@
 }
 body{
     height: 200vh;
-    background:linear-gradient(#393E46, #112D4E);
+    background:linear-gradient(#292929, #1b1b1b);
     font-family: 'League Spartan', sans-serif;
 }
 .flex{
@@ -24,7 +24,7 @@ header{
     color: #3EC70B;
     justify-content: space-between;
     align-items: center;
-    background-color:#222831;
+    background-color:#1b1b1b;
     height: 110px;
 }
 #header_icon{
@@ -39,7 +39,7 @@ header div{
 header div a{
     margin-right: 15px;
     text-decoration: none;
-    color: #EEEEEE;
+    color: #ffa31a;
     padding: 10px;
     border-radius: 5px;
 }
@@ -58,11 +58,12 @@ header a:hover{
 
 aside{
     padding-top: 9%;
-    background-color: #00ADB5;
+    background-color: #292929;
+    border-right:3px solid #1b1b1b;
     width: 15%;
     height: 100%;
+    color:#808080;
     position: fixed;
-    box-shadow: 2px 2px 50px black;
 }
 aside ul li{
     margin-top: 20%;
@@ -71,12 +72,25 @@ aside ul li{
     margin-left:10%;
 }
 aside ul li:hover{
-    color:#2B3467;
+    color:#ffa31a;
     cursor: pointer;
 }
 /* main contents */
 main{
     padding-left:20%;
+    padding-right:30%;
     padding-top:12%;
-    color:#ffa31a;
+    font-size: 20px;
+}
+main h1{
+    color: #00ADB5;
+}
+main p{
+    margin-top: 5%;
+    color: #808080;
+}
+
+#termux_img{
+    width: 80%;
+    height: 100%
 }
