@@ -94,3 +94,10 @@ main p{
     width: 80%;
     height: 100%
 }
+.termux_images{
+    width: 100%;
+}
+.termux_interface{
+    background-image: url('/../images/termux_interface.png')
+
+}
