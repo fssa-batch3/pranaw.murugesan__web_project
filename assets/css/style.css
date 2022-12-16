@@ -545,6 +545,8 @@ video{
 }
 .footer_content li{
     margin-top: 20px;
+    display: flex;
+    padding-left: 10px;
 }
 
 footer div ul{
@@ -555,10 +557,6 @@ footer{
     color: #00ADB5;
     height: 50vh;
     background: linear-gradient(#1F1D36,#3F3351);
-}
-.footer_content li{
-    display: flex;
-    padding-left: 10px;
 }
 .footer_content li:hover{
     color: white;
