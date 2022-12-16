@@ -279,50 +279,6 @@ video{
     padding: 10%;
     color: #393E46;
 }
-/* hackers.html */
-
-.hackertypes{
-    padding:10%;
-    color:yellow;
-    
-
-}
-.grayhat h2{
-    margin-bottom: 10%;
-    padding: 10px;
-}
-
-.grayhat h2:hover{
-    background-color: green;
-    box-shadow: 10px 10px 50px green;
-    width: 200px;
-    padding: 10px;
-    border-radius: 10px;
-}
-.whitehat,.grayhat, .blackhat{
-    margin-top: 5%;
-    color: white;
-}
-.whitehat p,.grayhat p, .blackhat p{
-    margin-top: 2%;
-    line-height: 30px;
-    letter-spacing: 1px;
-    font-size: 25px;
-    color: #00ADB5;
-    text-transform: capitalize;
-}
-.whitehat{
-    display: flex;
-}
-#hacker_gif{
-    margin-top: 10%;
-    width: 500px;
-    height: 300px;
-    border-radius: 10px;
-}
-#tyofhak{ /* Types of hackers font size */
-    font-size: 50px;
-}
 
 /* stages of hacking */
 @keyframes animate {
