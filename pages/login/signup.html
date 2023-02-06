@@ -37,7 +37,7 @@
         <!-- right content code goes here -->
         <div class="right_sign_up">
             <!-- form content goes here -->
-            <form action="../login/signin.html">
+            <form action="../../index.html">
             <div class="flex">
                 <input type="text" placeholder="Enter your first name..." id="fname" required>
                 <input type="text" placeholder="Enter your last name..." id="lname" required>
@@ -46,9 +46,24 @@
             <div class="flex">
             <input type="password" placeholder="Enter your password..." id="pass" required>
             <input type="password" placeholder="Confirm your password..." id="confirm_pass" required>
-            </div><button>SignUp</button>
+            </div>
                 </form>
+                <button type="button" id="submit" onclick="submit()">SignUp</button>
         </div>
     </div>
+    <script>
+        function submit(){
+          const first_name = document.getElementById("fname").value;
+          const email = document.getElementById("email").value;
+          const password = document.getElementById("pass").value;
+          const confirm_password = document.getElementById("confirm_pass").value;
+          console.log(first_name);
+          console.log(email);
+          console.log(password);
+          console.log(confirm_password);
+          localStorage.setItem("first_name", first_name);
+          window.location.href="./signin.html";
+        }
+      </script>
 </body>
 </html>

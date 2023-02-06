@@ -39,13 +39,22 @@
                 <form action="../learn/learn.html">
                 <input type="email" name="email" placeholder="enter your email" id="email" required>
                 <input type="password" name="password" placeholder="enter your password" id="password">
-                <button>Login</button>
+                
                     </form>
+                    <button type="button" id="submit" onclick="submit()">Login</button>
                 <div class="flex acc">
                     <a href="">forget password?</a>
                     <a href="../login/signup.html">Don't have account?</a>
                 </div>
             </div>
         </div>
+        <script>
+            function submit(){
+                const email =(document.getElementById("email").value);
+            const password =(document.getElementById("password").value);
+            console.log(email);
+            console.log(password);
+            }
+        </script>
 </body>
 </html>

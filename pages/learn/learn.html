@@ -41,7 +41,7 @@
         <video id="learn_bg_video" src="../../assets/videos/bg_blue.mp4" autoplay muted loop>
             <track label="English" kind="captions" srclang="en" default></video>
 
-        <div class="container_card">
+        <!-- <div class="container_card">
             <a href="../learn/hackers.html"><div><img src="../../assets/images/account.png" alt="error_loading_hacker_img"></div>
             <div><p>Types Of Hackers</p></div></a>  
         </div>
@@ -64,7 +64,7 @@
         <div class="container_card">
             <a href="../learn/mobilehacking.html"><div><img src="../../assets/images/smartphone.png" alt="error_loading_mobile_img"></div>
             <div><p>Hacking Through Mobile</p></div></a>  
-        </div>
+        </div> -->
         
         <div id="coming_soon" class="container_card">
             <a href=""><div><img src="../../assets/images/account.png" alt="error_loading_hacking_img"></div>
@@ -74,5 +74,67 @@
         
     </div>
 </main>
+<script>
+    
+  const arr = [
+        {
+          image: "/assets/images/account.png",
+          text: "Types Of Hackers",
+          location: "/pages/learn/hackers.html",
+        },
+        {
+          image: "/assets/images/computer.png",
+          text: "Stages Of Hacking",
+          location: "/pages/learn/hackingstages.html",
+        },
+        {
+          image: "/assets/images/coding.png",
+          text: "Web Hacking",
+          location: "/pages/learn/webhacking.html",
+        },
+        {
+          image: "/assets/images/account.png",
+          text: "Human Hacking",
+          location: "",
+        },
+        {
+          image: "/assets/images/smartphone.png",
+          text: "Hacking through mobile",
+          location: "",
+        },
+        {
+          image: "/assets/images/computer.png",
+          text: "Types Of Hacking",
+          location: "",
+        },
+      ];
+
+      for (let i = 4; 0 <= i; i--) {
+        const container_card = document.createElement("div");
+        container_card.setAttribute("class", "container_card");
+        document.querySelector("div.container").prepend(container_card);
+
+        const anchor = document.createElement("a");
+        anchor.setAttribute("href", arr[i].location);
+        anchor.setAttribute("class", "anchor");
+        document.querySelector("div.container_card").append(anchor);
+
+        const inner_div = document.createElement("div");
+        document.querySelector(".anchor").append(inner_div);
+        inner_div.setAttribute("class", "inner_div");
+
+        const img = document.createElement("img");
+        img.setAttribute("src", arr[i].image);
+        document.querySelector("div.inner_div").append(img);
+
+        const inner_sec_div = document.createElement("div");
+        document.querySelector("div.inner_div").append(inner_sec_div);
+        inner_sec_div.setAttribute("class", "inner_sec_div");
+
+        const p = document.createElement("p");
+        p.innerText = arr[i].text;
+        document.querySelector("div.inner_sec_div").append(p);
+      }
+</script>
 </body>
 </html>
