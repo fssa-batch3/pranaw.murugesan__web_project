@@ -63,28 +63,39 @@
             const email = document.getElementById("email").value;
             const password = document.getElementById("pass").value;
             const confirm_password = document.getElementById("confirm_pass").value;
-            console.log(first_name);
-            console.log(email);
-            console.log(password);
-            console.log(confirm_password);
-            localStorage.setItem("first_name", first_name);
-            window.location.href = "./signin.html";
+
+            if (password != confirm_password) {
+                alert("password is not matched")
+            }if (first_name == "" && email == "" && password == "" && confirm_password =="") {
+                alert("invalid credential")
+            } else {
+                let user_data = {
+                    "name": first_name,
+                    "email": email,
+                    "password": password
+                }
+                let arr;
+                if (arr = JSON.parse(localStorage.getItem("array"))) {
+                    JSON.parse(localStorage.getItem("array"))
+                } else {
+                    arr = []
+                }
+                arr.push(user_data)
+                localStorage.setItem("array", JSON.stringify(arr))
+                window.location.href = "../login/signin.html"
+            }
+            // console.log(first_name);
+            // console.log(email);
+            // console.log(password);
+            // console.log(confirm_password);
+
+
+            //     localStorage.setItem("first_name", first_name);
+            //     localStorage.setItem("email", email);
+            //     localStorage.setItem("password", password);
+            //     localStorage.setItem("confirm_password", confirm_password);
+            //     window.location.href = "./signin.html";
         }
-
-        let user = {}
-        let user_List = [];
-
-        user["fname"] = document.getElementById("fname").value;
-        user["lname"] = document.getElementById("lname").value;
-        user["email"] = document.getElementById("email").value; 
-        user["password"] = document.getElementById("pass").value; 
-        user["confirm_password"] = document.getElementById("confirm_pass").value; 
-
-        user_List.push(user);
-
-        let record = JSON.parse(localStorage.getItem('UserList')) || [];
-        record.push(user)
-        localStorage.setItem('UserList', JSON.stringify(record))
     </script>
 </body>
 

@@ -57,8 +57,22 @@
     function submit() {
       const email = document.getElementById("email").value;
       const password = document.getElementById("password").value;
-      console.log(email);
-      console.log(password);
+      let arr = JSON.parse(localStorage.getItem("array"))
+
+      let res;
+      arr.find(element => {
+        if (element["email"] == email && element["password"] == password) {
+          return res = 1
+        } else {
+          return res = 0;
+        }
+      })
+      if (res === 1) {
+        alert("Logged in")
+        window.location.href = "../../index.html"
+      } else {
+        alert('none')
+      }
     }
   </script>
 </body>
