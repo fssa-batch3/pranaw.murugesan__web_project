@@ -1,69 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scryptify</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
+
 <body>
     <!-- header goes here -->
     <header>
-        <a href="../../index.html"><div class="flex logo">
-            <img id="logo" src="../../assets/images/skull.png" alt="error_loading_logo"><h1 class="logo_text">SCRYPTIFY</h1>
-        </div></a>
+        <a href="../../index.html">
+            <div class="flex logo">
+                <img id="logo" src="../../assets/images/skull.png" alt="error_loading_logo">
+                <h1 class="logo_text">SCRYPTIFY</h1>
+            </div>
+        </a>
         <div class="flex">
             <a href="../../index.html"><span id="header_icon" class="material-symbols-outlined">
-                home
+                    home
                 </span></a>
             <a href="../learn/learn.html"><span id="header_icon" class="material-symbols-outlined">
-                local_library
+                    local_library
                 </span></a>
             <a href=""><span id="header_icon" class="material-symbols-outlined">
-                info
+                    info
                 </span></a>
             <a href="../login/signin.html"><span id="header_icon" class="material-symbols-outlined">
-                account_circle
+                    account_circle
                 </span></a>
         </div>
-</header>
+    </header>
     <!-- left image -->
     <div class="flex">
         <div class="left_sign_up">
-            <img  src="../../assets/images/gif/c-matrix_gif.gif" alt="error_loading_c-matrix-gif">
+            <img src="../../assets/images/gif/c-matrix_gif.gif" alt="error_loading_c-matrix-gif">
         </div>
         <!-- right content code goes here -->
         <div class="right_sign_up">
             <!-- form content goes here -->
             <form action="../../index.html">
-            <div class="flex">
-                <input type="text" placeholder="Enter your first name..." id="fname" required>
-                <input type="text" placeholder="Enter your last name..." id="lname" required>
-            </div>
-            <input type="email" name="email" placeholder="enter your email" id="email" required>
-            <div class="flex">
-            <input type="password" placeholder="Enter your password..." id="pass" required>
-            <input type="password" placeholder="Confirm your password..." id="confirm_pass" required>
-            </div>
-                </form>
-                <button type="button" id="submit" onclick="submit()">SignUp</button>
+                <div class="flex">
+                    <input type="text" placeholder="Enter your first name..." id="fname" required>
+                    <input type="text" placeholder="Enter your last name..." id="lname" required>
+                </div>
+                <input type="email" name="email" placeholder="enter your email" id="email" required>
+                <div class="flex">
+                    <input type="password" placeholder="Enter your password..." id="pass" required>
+                    <input type="password" placeholder="Confirm your password..." id="confirm_pass" required>
+                </div>
+            </form>
+            <button type="button" id="submit" onclick="submit()">SignUp</button>
         </div>
     </div>
     <script>
-        function submit(){
-          const first_name = document.getElementById("fname").value;
-          const email = document.getElementById("email").value;
-          const password = document.getElementById("pass").value;
-          const confirm_password = document.getElementById("confirm_pass").value;
-          console.log(first_name);
-          console.log(email);
-          console.log(password);
-          console.log(confirm_password);
-          localStorage.setItem("first_name", first_name);
-          window.location.href="./signin.html";
+        function submit() {
+            const first_name = document.getElementById("fname").value;
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("pass").value;
+            const confirm_password = document.getElementById("confirm_pass").value;
+            console.log(first_name);
+            console.log(email);
+            console.log(password);
+            console.log(confirm_password);
+            localStorage.setItem("first_name", first_name);
+            window.location.href = "./signin.html";
         }
-      </script>
+
+        let user = {}
+        let user_List = [];
+
+        user["fname"] = document.getElementById("fname").value;
+        user["lname"] = document.getElementById("lname").value;
+        user["email"] = document.getElementById("email").value; 
+        user["password"] = document.getElementById("pass").value; 
+        user["confirm_password"] = document.getElementById("confirm_pass").value; 
+
+        user_List.push(user);
+
+        let record = JSON.parse(localStorage.getItem('UserList')) || [];
+        record.push(user)
+        localStorage.setItem('UserList', JSON.stringify(record))
+    </script>
 </body>
+
 </html>
