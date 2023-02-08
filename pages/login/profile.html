@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scryptify</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="../../assets/css/profile.css" />
+</head>
+
+<body>
+    <!-- header codle goes here -->
+    <header>
+        <a href="../../index.html">
+            <div class="flex logo">
+                <img id="logo" src="../../assets/images/skull.png" alt="error_loading_logo" />
+                <h1 class="logo_text">SCRYPTIFY</h1>
+            </div>
+        </a>
+        <div class="flex">
+            <a href="../../index.html"><span id="header_icon" class="material-symbols-outlined">
+                    home
+                </span></a>
+            <a href="../learn/learn.html"><span id="header_icon" class="material-symbols-outlined">
+                    local_library
+                </span></a>
+            <a href=""><span id="header_icon" class="material-symbols-outlined">
+                    info
+                </span></a>
+            <a href="../login/signin.html"><span id="header_icon" class="material-symbols-outlined">
+                    account_circle
+                </span></a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="upperContainer">
+                <div class="profileImage">
+                    <!-- <img src="../../assets/images/account.png" alt=""> -->
+                </div>
+                <div class="rightContainer">
+                    <p id="name"></p>
+                    <p id="email"></p>
+                </div>
+            </div>
+            <div class="lowerContainer">
+                <div class="lowerLeftContainer">
+                    <p>Master in Science</p>
+                    <p>+91 9285792397</p>
+                    <p><a href="#">Change Password</a></p>
+                </div>
+                <div class="lowerRightContainer">
+                    <h4>My bio</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi pariatur vitae itaque aperiam consectetur facere reprehenderit quam, sint qui at corrupti facilis doloremque in a, debitis necessitatibus, fuga officiis eveniet?</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<script>
+    let arr = JSON.parse(localStorage.getItem("array"))
+    for (let index = 0; index <arr.length; index++) {
+        
+    document.getElementById("name").innerHTML = arr[index]["name"]
+    document.getElementById("email").innerHTML = arr[index]["email"]
+    }
+</script>
+</body>
+
+</html>

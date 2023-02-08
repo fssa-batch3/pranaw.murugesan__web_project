@@ -1,0 +1,164 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* scrollbar effect */
+
+::-webkit-scrollbar{
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px gray;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #009925;
+  }
+
+
+body{
+    font-size: 18px;
+    /* font-family: 'Inter', sans-serif; */
+    font-family: 'League Spartan', sans-serif;
+    background-color: #292929;
+}
+p{
+    color: #EEEEEE;
+}
+/* Login Page  */
+a{
+    text-decoration: none;
+    color: #00ADB5;
+}
+.left_sign_up{
+    width: 40%;
+    margin-top: 20%;
+    margin-left: 5%;
+}
+.sign_up_back{
+    min-height: 100vh;
+}
+.left_sign_up > img {
+    width: 100%;
+    background-color: #009925;
+    border-radius: 20%;
+    border: 5px solid lightgreen;
+}
+.right_sign_up{
+    width: 60%;
+    margin: 10%;
+    margin-top: 20%;
+
+}
+input, button{
+    width: 96%;
+    margin: 2%;
+    padding: 30px;
+    border: 3px solid #009925;
+    font-size: 20px;
+    background-color: #393E46;
+    color: #009925;
+}
+button{
+    cursor: pointer;
+}
+.flex{
+    display: flex;
+}
+.acc{
+    justify-content: space-between;
+}
+
+/* Body Header */
+
+header{
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    color: #3EC70B;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#1b1b1b;
+    height: 110px;
+}
+#header_icon{
+    font-size: 50px;
+}
+header div{
+    margin-left: 2%;
+    color: #6B728E;
+    font-family: 'League Spartan', sans-serif;
+    margin-right: 2%;
+}
+header div a{
+    margin-right: 15px;
+    text-decoration: none;
+    color: #ffa31a;
+    padding: 10px;
+    border-radius: 5px;
+}
+header a:hover{
+    color: #00ADB5;
+}
+#logo{
+    width: 140%;
+}
+.logo_text {
+    margin-top: 10%;
+    margin-left: 10%;
+    font-size: 25px;
+}
+/* header end */
+
+.container{
+    padding-top: 10%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.profileImage{
+    width: 40%;
+    height: 20vh;
+    background-color: white;
+}
+.profileImage>img{
+    width: 100%;
+}
+.lowerLeftContainer{
+    width: 70%;
+    
+}
+.lowerLeftContainer>p{
+    margin-top: 10%;
+}
+
+.rightContainer{
+    width: 30%;
+}
+.rightContainer>p{
+    margin-left: 15%;
+    margin-top: 15%;
+}
+.lowerRightContainer{
+    width: 30%;
+    height: 20vh;
+}
+
+
+.upperContainer,.lowerContainer{
+    display: flex;
+}
+
+.lowerRightContainer{
+    color: gray;
+    width: 100%;
+    border:5% solid #009925;
+}
+
+
+
+
+
