@@ -46,7 +46,7 @@
         <input type="email" name="email" placeholder="enter your email" id="email" required />
         <input type="password" name="password" placeholder="enter your password" id="password" />
       </form>
-      <button type="button" id="submit" onclick="submit()">Login</button>
+      <button id="submit" onclick="submit()">Login</button>
       <div class="flex acc">
         <a href="">forget password?</a>
         <a href="../login/signup.html">Don't have account?</a>
@@ -57,7 +57,7 @@
     function submit() {
       const email = document.getElementById("email").value;
       const password = document.getElementById("password").value;
-      let arr = JSON.parse(localStorage.getItem("array"))
+      let arr = JSON.parse(localStorage.getItem("array"));
 
       let res;
       arr.find(element => {

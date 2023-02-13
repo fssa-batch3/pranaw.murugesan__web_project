@@ -2,21 +2,24 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scryptify</title>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="../../assets/css/profile.css" />
+    <link rel="stylesheet" href="../../assets/css/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <!-- header codle goes here -->
+    <!-- header goes here -->
     <header>
         <a href="../../index.html">
             <div class="flex logo">
-                <img id="logo" src="../../assets/images/skull.png" alt="error_loading_logo" />
+                <img id="logo" src="../../assets/images/skull.png" alt="error_loading_logo">
                 <h1 class="logo_text">SCRYPTIFY</h1>
             </div>
         </a>
@@ -35,40 +38,143 @@
                 </span></a>
         </div>
     </header>
+    <!-- left image -->
+    <div class="flex">
+        <div class="left_sign_up">
+            <img src="https://64.media.tumblr.com/137abee0bb77eb42404b7d0af4e02992/tumblr_pigrjafaEv1w0po92_1280.jpg" alt="error_loading_c-matrix-gif">
+        </div>
+        <!-- right content code goes here -->
+        <div class="right_sign_up">
+            <!-- form content goes here -->
+            <form onsubmit="getData()" action="signin.html">
+                <div class="flex">
+                    <h1 class="first_name"></h1>
+                    <h1 class="last_name"></h1>
+                </div>
+                <h1 class="email"></h1>
+                <div class="flex">
+                    <h1 class="first_name">about you,<br>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos id est unde soluta beatae
+                        cupiditate fugiat officiis aut sit fuga optio dolorem ea architecto aperiam, ducimus tempora eum
+                        accusamus quibusdam.</h1>
 
-    <main>
-        <div class="container">
-            <div class="upperContainer">
-                <div class="profileImage">
-                    <!-- <img src="../../assets/images/account.png" alt=""> -->
                 </div>
-                <div class="rightContainer">
-                    <p id="name"></p>
-                    <p id="email"></p>
+                <h1 class="first_name"></h1>
+            </form>
+
+        </div>
+        <div class="friends">
+            <input type="" name="search" id="" placeholder="Search Friends">
+            <button id="fb"><i class="fa-brands fa-facebook"></i> Invite Friends on Facebook</button>
+            <button id="tweet"><i class="fa-brands fa-twitter"></i> &nbsp; Invite Friends on Twitter &nbsp; &nbsp;
+            </button>
+            <button id="wb"><i class="fa-brands fa-whatsapp"></i> &nbsp; Invite Friends on Whatsapp</button>
+            <h3 id="recom">Recommanded Friends</h3>
+            <div class="recommendedFriends">
+
+                <!-- ? Created friends request using html -->
+
+                <!-- <div class="flex recommanded">
+                <img src="https://i.pinimg.com/originals/0b/3d/f1/0b3df19a63dfe264cfd984f6864a77b3.jpg" alt="">
+                <div>
+                    <h3>Monkey D. Luffy</h3>
+                    <h5>Captain</h5>
                 </div>
+                <button id="request">Request</button>
+            </div> -->
+                <!-- <div class="flex recommanded">
+                <img src="https://pbs.twimg.com/media/ElhZ-EIWkAAQ_ZL.jpg:large" alt="">
+                    <div>
+                        <h3>Roronoa Zoro</h3>
+                        <h5>Swords Man</h5>
+                    </div>
+                        <button id="request">Request</button>
+                
             </div>
-            <div class="lowerContainer">
-                <div class="lowerLeftContainer">
-                    <p>Master in Science</p>
-                    <p>+91 9285792397</p>
-                    <p><a href="#">Change Password</a></p>
+            <div class="flex recommanded">
+                <img src="https://preview.redd.it/2hx6bc7ym3l71.jpg?width=640&crop=smart&auto=webp&s=0450121f1fa118aae00e93021f424ebbe46dc9b2"
+                    alt="">
+                <div>
+                    <h3>Vinsmoke Sanji</h3>
+                <h5>Cook</h5>
                 </div>
-                <div class="lowerRightContainer">
-                    <h4>My bio</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi pariatur vitae itaque aperiam consectetur facere reprehenderit quam, sint qui at corrupti facilis doloremque in a, debitis necessitatibus, fuga officiis eveniet?</p>
-                </div>
+                <button id="request">Request</button>
+            </div> -->
+
+
             </div>
         </div>
-    </main>
+    </div>
+    <script>
+        let arr = JSON.parse(localStorage.getItem("array"))
 
-<script>
-    let arr = JSON.parse(localStorage.getItem("array"))
-    for (let index = 0; index <arr.length; index++) {
-        
-    document.getElementById("name").innerHTML = arr[index]["name"]
-    document.getElementById("email").innerHTML = arr[index]["email"]
-    }
-</script>
+        for (let index = 0; index < arr.length; index++) {
+
+            document.querySelector(".first_name").innerText = arr[index]["first_name"];
+            document.querySelector(".last_name").innerText = arr[index]["last_name"];
+            document.querySelector(".email").innerText = arr[index]["email"];
+        }
+
+        // Created object for friend request
+
+        let friendRequest = [
+            {
+                image: {
+                    source: "https://i.pinimg.com/originals/0b/3d/f1/0b3df19a63dfe264cfd984f6864a77b3.jpg",
+                    alt: "luffy"
+                },
+                name: "Monkey D. Luffy",
+                role: "Captain"
+            },
+            {
+                image: {
+                    source: "https://pbs.twimg.com/media/ElhZ-EIWkAAQ_ZL.jpg:large",
+                    alt: "zoro"
+                },
+                name: "Roronoa Zoro",
+                role: "Swords Man"
+            },
+            {
+                image: {
+                    source: "https://preview.redd.it/2hx6bc7ym3l71.jpg?width=640&crop=smart&auto=webp&s=0450121f1fa118aae00e93021f424ebbe46dc9b2",
+                    alt: "sanji"
+                },
+                name: "Vinsmoke Sanji",
+                role: "Cook"
+            }
+        ]
+
+
+// creating elements and running it on loop
+        for (let i = 0; i <= friendRequest.length; i++) {
+
+            const div_recommanded = document.createElement("div");
+            div_recommanded.setAttribute("class", "flex recommanded")
+            document.querySelector("div.recommendedFriends").prepend(div_recommanded)
+
+            const img = document.createElement("img");
+            img.setAttribute("src", friendRequest[i]["image"]["source"])
+            img.setAttribute("alt", friendRequest[i]["image"]["alt"])
+            document.querySelector(".recommanded").append(img)
+
+            const inner_div = document.createElement("div")
+            inner_div.setAttribute("class", "inner_div")
+            document.querySelector(".recommanded").append(inner_div)
+
+            const name = document.createElement("h3")
+            name.innerText = friendRequest[i]["name"];
+            document.querySelector("div.inner_div").append(name)
+
+            const role = document.createElement("h5");
+            role.innerText = friendRequest[i]["role"]
+            document.querySelector("div.inner_div").append(role);
+
+            const btn = document.createElement("button");
+            btn.setAttribute("id", "request");
+            btn.innerText = "Request";
+            document.querySelector(".recommanded").append(btn)
+        }
+    </script>
 </body>
 
 </html>

@@ -43,7 +43,7 @@
         <!-- right content code goes here -->
         <div class="right_sign_up">
             <!-- form content goes here -->
-            <form action="../../index.html">
+            <form  >
                 <div class="flex">
                     <input type="text" placeholder="Enter your first name..." id="fname" required>
                     <input type="text" placeholder="Enter your last name..." id="lname" required>
@@ -53,37 +53,55 @@
                     <input type="password" placeholder="Enter your password..." id="pass" required>
                     <input type="password" placeholder="Confirm your password..." id="confirm_pass" required>
                 </div>
+                <button id="submit" onclick="getData()">SignUp</button>
             </form>
-            <button type="button" id="submit" onclick="submit()">SignUp</button>
+
         </div>
     </div>
     <script>
-        function submit() {
+        document.querySelector("button").addEventListener("click",function(e){
+            e.preventDefault();
+        })
+        function getData() {
+
             const first_name = document.getElementById("fname").value;
+            const last_name = document.getElementById("lname").value;
             const email = document.getElementById("email").value;
             const password = document.getElementById("pass").value;
             const confirm_password = document.getElementById("confirm_pass").value;
 
-            if (password != confirm_password) {
-                alert("password is not matched")
-            }if (first_name == "" && email == "" && password == "" && confirm_password =="") {
-                alert("invalid credential")
-            } else {
-                let user_data = {
-                    "name": first_name,
-                    "email": email,
-                    "password": password
-                }
-                let arr;
-                if (arr = JSON.parse(localStorage.getItem("array"))) {
-                    JSON.parse(localStorage.getItem("array"))
-                } else {
-                    arr = []
-                }
-                arr.push(user_data)
-                localStorage.setItem("array", JSON.stringify(arr))
-                window.location.href = "../login/signin.html"
+            if (password == confirm_password && first_name !== "" && email !== "" && password !== "" && confirm_password !== "")  {
+                alert("password is matched")
+                window.location.href = "./signin.html"
             }
+            else if(password !== confirm_password){
+                alert("password is not matched")
+            }
+
+            else {
+                console.log("not entered")
+                
+            }
+
+
+            let user_data = {
+                "first_name": first_name,
+                "last_name": last_name,
+                "email": email,
+                "password": password
+            }
+            let arr;
+            let _data = JSON.parse(localStorage.getItem("array"))
+
+            if (arr === _data) {
+                arr = _data;
+            }
+            else {
+                arr = [];
+            }
+            arr.push(user_data)
+            localStorage.setItem("array", JSON.stringify(arr))
+            // window.location.href = "./signin.html";
             // console.log(first_name);
             // console.log(email);
             // console.log(password);
@@ -95,7 +113,11 @@
             //     localStorage.setItem("password", password);
             //     localStorage.setItem("confirm_password", confirm_password);
             //     window.location.href = "./signin.html";
+            // 
+            //     })
+            // }
         }
+
     </script>
 </body>
 
